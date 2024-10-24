@@ -4,11 +4,12 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    font-family: "Arial", sans-serif;
 }
 
 /* Centraliza a imagem no topo e ajusta seu tamanho */
 #topo img {
-    width: 60%;
+    width: 15%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -28,6 +29,22 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li a {
+    color: white; 
+    text-decoration: none; /* Remove o underline padrão */
+    font-size: 15px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+/* Efeito de hover para adicionar underline ao passar o mouse */
+nav ul li a:hover {
+    text-decoration: underline; /* Adiciona o underline ao passar o mouse */
+}
+
+/* Estilo dos links quando visitados */
+nav ul li a:visited {
+    color: white; /* Mantém a cor branca mesmo depois de visitado */
+}
+
 /* Posiciona os ícones sociais no canto superior direito */
 .social-icons {
     display: flex;
@@ -40,10 +57,80 @@ nav ul li {
 
 /* Define o tamanho dos ícones corretamente */
 .social-icons .icon {
-    width: 30px !important;  /* Força o tamanho dos ícones */
-    height: 30px !important; /* Força a altura dos ícones */
+    width: 40px !important;  /* Força o tamanho dos ícones */
+    height: 40px !important; /* Força a altura dos ícones */
     object-fit: contain;
     padding: 20px;
     margin: 0;
     border: none; /* Garante que não há bordas nos ícones */
+}
+
+.contact-section {
+    background-color: white;
+    color: black;
+    padding: 40px;
+    margin: 40px auto;
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centraliza a seção de contato */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Faz o formulário ocupar 100% da seção */
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+.required-explanation {
+    color: red;
+    font-weight: bold;
 }
