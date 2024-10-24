@@ -1,0 +1,49 @@
+/* Fundo preto e texto branco */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centraliza a imagem no topo e ajusta seu tamanho */
+#topo img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Remove os marcadores e espaçamento da lista de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Espaçamento entre os itens do menu de navegação */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Posiciona os ícones sociais no canto superior direito */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    align-items: center;  /* Garante o alinhamento vertical dos ícones */
+}
+
+/* Define o tamanho dos ícones corretamente */
+.social-icons .icon {
+    width: 30px !important;  /* Força o tamanho dos ícones */
+    height: 30px !important; /* Força a altura dos ícones */
+    object-fit: contain;
+    padding: 20px;
+    margin: 0;
+    border: none; /* Garante que não há bordas nos ícones */
+}
