@@ -19,7 +19,6 @@
 
 
 
-
 ## 📂 Estrutura do Projeto
 
 ![Tabela Estrutura do Projeto](./img/estrutura_projeto.png)
