@@ -5,8 +5,37 @@ body {
     padding: 0;
     font-family: "Arial", sans-serif;
 }
-
-/* Centraliza a imagem no topo e ajusta seu tamanho */
+/* Centraliza o conteúdo do topo usando flexbox */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+ 
+/* Define o estilo para a lista de navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+ 
+/* Alinha o menu de navegação à esquerda */
+nav .nav-left {
+    display: flex;
+    gap: 20px;
+}
+ 
+/* Estiliza os links de navegação */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+ 
+/* Logo centralizado */
 #topo img {
     width: 15%;
     height: auto;
@@ -14,36 +43,56 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+ 
+/* Ícones sociais alinhados à direita */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    align-items: center;
+}
+ 
+.social-icons .icon {
+    width: 40px !important;  
+    height: 40px !important; 
+    object-fit: contain;
+    padding: 20px;
+    margin: 0;
+    border: none; 
+}
+  
 /* Remove os marcadores e espaçamento da lista de navegação */
 nav ul {
     list-style-type: none;
     padding: 20px;
     margin: 0;
+    text-align: center;
 }
-
+ 
 /* Espaçamento entre os itens do menu de navegação */
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
-
+ 
 nav ul li a {
-    color: white; 
-    text-decoration: none; 
-    font-size: 15px; 
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
 }
-
+ 
 /* Efeito de hover para adicionar underline ao passar o mouse */
 nav ul li a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
-
+ 
 /* Estilo dos links quando visitados */
 nav ul li a:visited {
-    color: white; 
+    color: white;
 }
-
+ 
 /* Posiciona os ícones sociais no canto superior direito */
 .social-icons {
     display: flex;
@@ -53,17 +102,15 @@ nav ul li a:visited {
     right: 10px;
     align-items: center;  
 }
-
+ 
 /* Define o tamanho dos ícones corretamente */
 .social-icons .icon {
-    width: 40px !important;  
-    height: 40px !important; 
+    width: 30px;
+    height: 30px;
     object-fit: contain;
-    padding: 20px;
-    margin: 0;
-    border: none; 
 }
-
+ 
+/* Centraliza e estiliza a seção de contato */
 .contact-section {
     background-color: white;
     color: black;
@@ -77,27 +124,27 @@ nav ul li a:visited {
     flex-direction: column;
     align-items: center;
 }
-
+ 
 /* Centraliza a seção de contato */
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 100%; 
+    width: 100%;
     gap: 20px;
 }
-
+ 
 .form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
 }
-
+ 
 .form-group label {
     font-weight: bold;
     margin-bottom: 5px;
 }
-
+ 
 input[type="text"], input[type="email"], input[type="tel"], textarea {
     width: 100%;
     padding: 10px;
@@ -105,11 +152,11 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
     border-radius: 5px;
     font-size: 16px;
 }
-
+ 
 textarea {
     height: 100px;
 }
-
+ 
 button {
     background-color: black;
     color: white;
@@ -119,189 +166,151 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
-
+ 
 button:hover {
     background-color: #333;
 }
-
-.required {
-    color: red;
-    font-weight: bold;
-}
-
+ 
 .required-explanation {
     color: red;
     font-weight: bold;
 }
-
+ 
+/* Centraliza a seção "read-more" */
 .read-more {
     display: flex;
-    text-align: center;
-    flex-direction: column; 
-    align-items: center; 
-    height: 100vh;   
+    flex-direction: column;
+    align-items: center;
     color: #db8483;
     font-size: 25px;
     padding: 20px;
-
-  }
-  
+    text-align: center;
+}
+ 
 .read-more img {
     width: 90%;
-    max-width: 1200px;
+    max-width: 800px; /* Limita o tamanho da imagem */
     height: auto;
-    display: block;
-    margin: 40px auto ;
-
-  }
-
-.read-more button{
+    margin: 20px auto;
+}
+ 
+.read-more button {
     background-color: #db8483;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-
-}
-
-/* Estilo para o título */
-.more-info h1 {
-    font-size: 2em; /* Tamanho da fonte */
-    color: #db8483; /* Cor do texto */
-    text-align: center; /* Alinhamento do texto */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
-    display: block;
-    
 }
  
-/* Estilo para o parágrafo */
+/* Estilo para o título da seção "more-info" */
+.more-info h2 {
+    font-size: 2em;
+    color: #db8483;
+    text-align: center;
+    margin-bottom: 10px;
+}
+ 
+/* Estilo para o parágrafo da seção "more-info" */
 .more-info p {
-    font-size: 1em; /* Tamanho da fonte */
-    color: #f8f6f6; /* Cor do texto */
-    line-height: 1.5; /* Altura das linhas para melhorar a legibilidade */
-    text-align: center; /* Alinhamento justificado */
-    margin: 0 10px; /* Espaçamento nas laterais */
-    display: block;
+    font-size: 1em;
+    color: #f8f6f6;
+    line-height: 1.5;
+    text-align: center;
     padding: 0 20px;
 }
-
-
-#image-conteudo1 {
-    width: 100%; /* O tamanho da imagem ocupa todo o espaço disponível */
+ 
+/* Imagens da seção "section" */
+.section .image img {
+    width: 100%;
+    max-width: 300px; /* Limita o tamanho da imagem */
     height: auto;
-    display: block; /* Garante que a imagem seja tratada como um elemento de bloco */
-     /* Define um tamanho máximo para a imagem */
 }
  
-#image-conteudo2 {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 300px;
-}
-
-#image-conteudo3{
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 300px;
-}
-
-section {
+/* Estiliza a seção geral */
+.section {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-start; /* Alinha a imagem à esquerda */
+    justify-content: flex-start;
     margin-bottom: 40px;
-}
- 
-.section .image {
-    flex: 1; /* A imagem ocupa 1 parte do espaço */
-    margin-right: 20px; /* Espaçamento entre imagem e texto */
+    padding: 0 20px;
+    gap: 20px;
 }
  
 .section .content {
-    flex: 2; /* O conteúdo ocupa o restante do espaço */
-}
- 
-
- 
-section .content {
-    flex: 2; /* O conteúdo ocupa duas partes do espaço */
+    flex: 1;
     display: flex;
-    flex-direction: column; /* Garante que o conteúdo seja empilhado verticalmente */
+    flex-direction: column;
     text-align: left;
 }
  
 .section .content h2 {
     margin-top: 0;
     margin-bottom: 10px;
-    color: #f27979; 
-    font-family: 'Arial', sans-serif;
+    color: #f27979;
     font-size: 24px;
 }
  
 .section .content p {
     font-size: 16px;
     line-height: 1.6;
-    margin: 0;
-    color: #fff; /* Cor branca para o parágrafo */
-}
-  
-hr {
-    border: 1px solid #ccc; /* Define a borda da linha */
-    margin: 10px 0; /* Adiciona margem acima e abaixo da linha */
-    width: 70%; /* Largura da linha */
-    margin: 30px auto; /* Centraliza a linha */
-}
-
-  
-a{
     color: #fff;
 }
-
+ 
+/* Linha horizontal (hr) */
+hr {
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 30px auto;
+}
+ 
+/* Estilo para links */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+ 
+a:hover {
+    text-decoration: underline;
+}
+ 
 /* Estilo para o rodapé */
 footer {
-    background-color: #000000; 
-    color: white; 
+    background-color: #000000;
+    color: white;
     padding: 20px;
-    text-align: center; 
+    text-align: center;
     margin-top: 40px;
 }
-
-/* Estilo para os ícones sociais */
+ 
+/* Estilo para os ícones sociais no rodapé */
 footer .footer-icons {
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-    margin-bottom: 30px; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
 }
-
-/* Estilo dos ícones */
+ 
+/* Estilo dos ícones do rodapé */
 footer .footer-icons .icon {
-    width: 20px; 
-    height: 20px; 
-    object-fit: contain;
+    width: 25px;
+    height: 25px;
 }
-
+ 
 /* Estilo para os links do rodapé */
 footer .footer-links {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
-    gap: 15px; 
+    flex-wrap: wrap;
+    gap: 15px;
     font-size: 14px;
 }
-
-/* Estilo dos links */
+ 
 footer .footer-links a {
-    color: white; 
-    text-decoration: none; 
+    color: white;
+    text-decoration: none;
 }
-
+ 
 footer .footer-links a:hover {
-    text-decoration: underline; 
-}
-
-footer .footer-links a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
