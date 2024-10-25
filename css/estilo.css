@@ -134,3 +134,122 @@ button:hover {
     color: red;
     font-weight: bold;
 }
+
+.read-more {
+    display: flex;
+    text-align: center;
+    flex-direction: column; 
+    align-items: center; 
+    height: 100vh;   
+    color: #db8483;
+    font-size: 25px;
+    padding: 20px;
+
+  }
+  
+.read-more img {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 40px auto ;
+
+  }
+
+.read-more button{
+    background-color: #db8483;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.more-info h1{
+   text-align: center;
+   font-size: 40px;
+   color: #db8483;
+}
+.more-info p{
+    text-align: center;
+    font-size: 18px;
+    white-space: pre;
+    height: 60vh;
+    color: #fff;
+    white-space: pre-wrap;
+    margin: 0 auto;
+}
+
+
+#image-conteudo1 {
+    width: 100%; /* O tamanho da imagem ocupa todo o espaço disponível */
+    height: auto;
+    display: block; /* Garante que a imagem seja tratada como um elemento de bloco */
+     /* Define um tamanho máximo para a imagem */
+}
+ 
+#image-conteudo2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 300px;
+}
+
+#image-conteudo3{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 300px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha a imagem à esquerda */
+    margin-bottom: 40px;
+}
+ 
+.section .image {
+    flex: 1; /* A imagem ocupa 1 parte do espaço */
+    margin-right: 20px; /* Espaçamento entre imagem e texto */
+}
+ 
+.section .content {
+    flex: 2; /* O conteúdo ocupa o restante do espaço */
+}
+ 
+
+ 
+section .content {
+    flex: 2; /* O conteúdo ocupa duas partes do espaço */
+    display: flex;
+    flex-direction: column; /* Garante que o conteúdo seja empilhado verticalmente */
+    text-align: left;
+}
+ 
+.section .content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #f27979; /* Cor rosa para o título */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+ 
+.section .content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    color: #fff; /* Cor branca para o parágrafo */
+}
+  
+hr {
+    border: 1px solid #ccc; /* Define a borda da linha */
+    margin: 10px 0; /* Adiciona margem acima e abaixo da linha */
+    width: 50%; /* Largura da linha */
+    margin: 30px auto; /* Centraliza a linha */
+}
+
+  
+a{
+    color: #fff;
+}
