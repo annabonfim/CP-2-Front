@@ -165,19 +165,25 @@ button:hover {
 
 }
 
-.more-info h1{
-   text-align: center;
-   font-size: 40px;
-   color: #db8483;
+/* Estilo para o título */
+.more-info h1 {
+    font-size: 2em; /* Tamanho da fonte */
+    color: #db8483; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    display: block;
+    
 }
-.more-info p{
-    text-align: center;
-    font-size: 18px;
-    white-space: pre;
-    height: 60vh;
-    color: #fff;
-    white-space: pre-wrap;
-    margin: 0 auto;
+ 
+/* Estilo para o parágrafo */
+.more-info p {
+    font-size: 1em; /* Tamanho da fonte */
+    color: #f8f6f6; /* Cor do texto */
+    line-height: 1.5; /* Altura das linhas para melhorar a legibilidade */
+    text-align: center; /* Alinhamento justificado */
+    margin: 0 10px; /* Espaçamento nas laterais */
+    display: block;
+    padding: 0 20px;
 }
 
 
