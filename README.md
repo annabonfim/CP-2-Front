@@ -18,14 +18,13 @@
 📄 Documentação: Criar e atualizar o README.md.
 
 
-
 ## 📂 Estrutura do Projeto
 
 ![Tabela Estrutura do Projeto](./img/estrutura_projeto.png)
 
 
 
-## 🌟 Contribuidores
+## 🌟 Contribuidoras
 
 - [**Alane Rocha rm561052**](https://github.com/alanerochaa)  
   *Responsável por:* Rodapé e README.md.
