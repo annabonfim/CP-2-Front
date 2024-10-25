@@ -1,4 +1,3 @@
-/* Fundo preto e texto branco */
 body {
     background-color: black;
     color: white;
@@ -31,18 +30,18 @@ nav ul li {
 
 nav ul li a {
     color: white; 
-    text-decoration: none; /* Remove o underline padrão */
-    font-size: 15px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-decoration: none; 
+    font-size: 15px; 
 }
 
 /* Efeito de hover para adicionar underline ao passar o mouse */
 nav ul li a:hover {
-    text-decoration: underline; /* Adiciona o underline ao passar o mouse */
+    text-decoration: underline; 
 }
 
 /* Estilo dos links quando visitados */
 nav ul li a:visited {
-    color: white; /* Mantém a cor branca mesmo depois de visitado */
+    color: white; 
 }
 
 /* Posiciona os ícones sociais no canto superior direito */
@@ -52,17 +51,17 @@ nav ul li a:visited {
     position: absolute;
     top: 10px;
     right: 10px;
-    align-items: center;  /* Garante o alinhamento vertical dos ícones */
+    align-items: center;  
 }
 
 /* Define o tamanho dos ícones corretamente */
 .social-icons .icon {
-    width: 40px !important;  /* Força o tamanho dos ícones */
-    height: 40px !important; /* Força a altura dos ícones */
+    width: 40px !important;  
+    height: 40px !important; 
     object-fit: contain;
     padding: 20px;
     margin: 0;
-    border: none; /* Garante que não há bordas nos ícones */
+    border: none; 
 }
 
 .contact-section {
@@ -83,7 +82,7 @@ nav ul li a:visited {
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Faz o formulário ocupar 100% da seção */
+    width: 100%; 
     gap: 20px;
 }
 
@@ -133,4 +132,51 @@ button:hover {
 .required-explanation {
     color: red;
     font-weight: bold;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #000000; 
+    color: white; 
+    padding: 20px;
+    text-align: center; 
+    margin-top: 40px;
+}
+
+/* Estilo para os ícones sociais */
+footer .footer-icons {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 30px; 
+}
+
+/* Estilo dos ícones */
+footer .footer-icons .icon {
+    width: 20px; 
+    height: 20px; 
+    object-fit: contain;
+}
+
+/* Estilo para os links do rodapé */
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    font-size: 14px;
+}
+
+/* Estilo dos links */
+footer .footer-links a {
+    color: white; 
+    text-decoration: none; 
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline; 
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline; 
 }
